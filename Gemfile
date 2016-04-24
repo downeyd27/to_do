@@ -20,10 +20,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 group :development do
+  gem 'better_errors', '~> 2.1', '>= 2.1.1'
+  gem 'binding_of_caller', '~> 0.7.2'
+  gem 'quiet_assets', '~> 1.1'
   gem 'byebug', '~> 8.2', '>= 8.2.4'
   gem 'web-console', '~> 2.0'
   gem 'spring', '~> 1.7', '>= 1.7.1'
-  gem 'quiet_assets', '~> 1.1'
 end
 
 group :development, :test do
