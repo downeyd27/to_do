@@ -35,3 +35,8 @@ end
 group :test do
   gem 'shoulda-matchers', '~> 3.1', '>= 3.1.1'
 end
+
+group :producation do
+  # Recommended for delpoying to Heroku
+  gem 'rails_12factor', '~> 0.0.3'
+end
