@@ -1,8 +1,4 @@
 class TasksController < ApplicationController
-  def index
-    @lists = List.all
-  end
-
   def new
     @list = List.find(params[:list_id])
     @task = @list.tasks.new

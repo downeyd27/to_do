@@ -35,10 +35,10 @@ group :development, :test do
 end
 
 group :test do
+  gem 'capybara', '~> 2.7'
   gem 'shoulda-matchers', '~> 3.1', '>= 3.1.1'
 end
 
-group :producation do
-  # Recommended for delpoying to Heroku
-  gem 'rails_12factor', '~> 0.0.3'
+group :production do
+  gem 'rails_12factor', '~> 0.0.3' # Recommended for delpoying to Heroku
 end
